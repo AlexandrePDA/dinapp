@@ -7,7 +7,7 @@ struct DestinationDetailView: View {
     @Environment(\.managedObjectContext) private var context
     @Environment(\.dismiss) private var dismiss
 
-    let destination: Destination
+    @ObservedObject var destination: Destination
 
     @State private var confirmDelete = false
     @State private var photoSelection: [PhotosPickerItem] = []
@@ -15,6 +15,17 @@ struct DestinationDetailView: View {
     @State private var viewerContext: PhotoViewerContext?
 
     var body: some View {
+        // L'objet peut avoir été supprimé (bouton Supprimer, autre appareil)
+        // alors que la sheet est encore présentée : ne surtout pas relire
+        // ses propriétés, sous peine de crash « could not fulfill a fault ».
+        if destination.isDeleted || destination.managedObjectContext == nil {
+            Color.clear.onAppear { dismiss() }
+        } else {
+            content
+        }
+    }
+
+    private var content: some View {
         NavigationStack {
             ScrollView {
                 VStack(alignment: .leading, spacing: 22) {
@@ -298,7 +309,7 @@ struct DestinationDetailView: View {
     }
 
     private func delete() {
-        context.deleteDestination(destination)
         dismiss()
+        context.deleteDestination(destination)
     }
 }

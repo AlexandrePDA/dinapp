@@ -5,13 +5,24 @@ struct TripDetailView: View {
     @Environment(\.managedObjectContext) private var context
     @Environment(\.dismiss) private var dismiss
 
-    let trip: Trip
+    @ObservedObject var trip: Trip
 
     @State private var selectedDestination: Destination?
     @State private var isRenaming = false
     @State private var newTitle = ""
 
     var body: some View {
+        // Un séjour vidé de sa dernière étape est supprimé automatiquement
+        // (y compris depuis l'autre appareil) : on ferme au lieu de relire
+        // un objet invalidé.
+        if trip.isDeleted || trip.managedObjectContext == nil {
+            Color.clear.onAppear { dismiss() }
+        } else {
+            content
+        }
+    }
+
+    private var content: some View {
         NavigationStack {
             ScrollView {
                 VStack(alignment: .leading, spacing: 22) {

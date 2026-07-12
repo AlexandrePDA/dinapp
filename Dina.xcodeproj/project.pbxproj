@@ -40,7 +40,9 @@
 		8090EF436A3468FD267B3FA9 /* StatShapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7813A4FD7F5A913E753AAC /* StatShapes.swift */; };
 		85CF89BFDCB60DDF829F57B4 /* DinaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182DD15D919D1A41D5C70893 /* DinaModel.swift */; };
 		87A179027B8B26B4D15A2D65 /* YearlyStatsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5B5149966435DD61133138 /* YearlyStatsViewModel.swift */; };
+		8F8A23A45C570C4EE9310783 /* DeleteDestinationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DE651F7405B705BB5BFEB9 /* DeleteDestinationUITests.swift */; };
 		984E9D009EFD54439DFDB36A /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48790BC86D1EDCA10741DF4D /* SettingsView.swift */; };
+		9D20DB77F0EC3D6AA02CC8D9 /* UITestSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7985FE1564BE66B2C2BD886 /* UITestSupport.swift */; };
 		A661E6F9EC8B4DFAF86BE1DC /* BadgeCelebrationOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A3FEF1CFE6701366425B2A /* BadgeCelebrationOverlay.swift */; };
 		A7EBD55AA64996F69959800B /* AddDestinationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86D35268DBD6CADBFD3E1BA /* AddDestinationViewModel.swift */; };
 		AC3FCE304E5EEC4BD323171A /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39B873BAC23EB05CCBC7ACB /* AppColors.swift */; };
@@ -64,6 +66,16 @@
 		FE5DDC0775267B6D1F8D0D3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54EF02143D6959D688230A0E /* Assets.xcassets */; };
 		FEFCD6E6A1AF42B3D3FD6342 /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24DB94C72B6CCB2A9A94B75A /* Trip.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3AED58CC64E30B81533E2CDC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F74EE40EA762B7CAC9D64238 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A3F357754C0C8A47110623A9;
+			remoteInfo = Dina;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		08F669978D5031AA75034EB5 /* OrganicShapes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrganicShapes.swift; sourceTree = "<group>"; };
@@ -89,6 +101,7 @@
 		4591E9B8E20A81AFBD255A48 /* OnboardingPages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPages.swift; sourceTree = "<group>"; };
 		48790BC86D1EDCA10741DF4D /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		4FF8AEA63E330ABA42662770 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		50001FDBF157CCD915D65500 /* DinaUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = DinaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		51608BA584FE9B168174D14A /* BadgeEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeEngine.swift; sourceTree = "<group>"; };
 		54EF02143D6959D688230A0E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		582CA8E3BFB8182ABEE85621 /* PhotoStrip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoStrip.swift; sourceTree = "<group>"; };
@@ -111,12 +124,14 @@
 		B86D35268DBD6CADBFD3E1BA /* AddDestinationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDestinationViewModel.swift; sourceTree = "<group>"; };
 		BFE37E693AC2B6EBFEE2916F /* YearlyStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YearlyStatsView.swift; sourceTree = "<group>"; };
 		C0C19CE91F9D9342D0C4FACE /* Destination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Destination.swift; sourceTree = "<group>"; };
+		C7985FE1564BE66B2C2BD886 /* UITestSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITestSupport.swift; sourceTree = "<group>"; };
 		C92CEDC2B307C151B448AEBE /* AppTypography.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTypography.swift; sourceTree = "<group>"; };
 		D0CBD44BB9B84F71D796176B /* PurposeChip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurposeChip.swift; sourceTree = "<group>"; };
 		D6A3FEF1CFE6701366425B2A /* BadgeCelebrationOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeCelebrationOverlay.swift; sourceTree = "<group>"; };
 		DC4529D17244AB7C4C7C75F3 /* ShareTripButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareTripButton.swift; sourceTree = "<group>"; };
 		E0E4C9D3B8803332C4858D17 /* DestinationPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationPhoto.swift; sourceTree = "<group>"; };
 		E1A8978627BF0C125FF1752C /* AddDestinationSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDestinationSheet.swift; sourceTree = "<group>"; };
+		E2DE651F7405B705BB5BFEB9 /* DeleteDestinationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteDestinationUITests.swift; sourceTree = "<group>"; };
 		E3635329C87D23943285EB09 /* Destination+Distance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Destination+Distance.swift"; sourceTree = "<group>"; };
 		EEF0B8116C7AE751AA37F3C0 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 		F107CB5505EEB5B6A2A670B7 /* Date+Formatting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Formatting.swift"; sourceTree = "<group>"; };
@@ -232,10 +247,19 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		705DA42F2C7C48D1C29EC0D5 /* DinaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E2DE651F7405B705BB5BFEB9 /* DeleteDestinationUITests.swift */,
+			);
+			path = DinaUITests;
+			sourceTree = "<group>";
+		};
 		74E6D7C730CF173930BD9F5A /* Core */ = {
 			isa = PBXGroup;
 			children = (
 				F9DBF94A8456C27AE08D1D11 /* AppLog.swift */,
+				C7985FE1564BE66B2C2BD886 /* UITestSupport.swift */,
 				5092DD59C62C4FB6FD474F7B /* Extensions */,
 				8692DEAC54A3C09784BFF2BD /* Models */,
 				96606347F3BCA2437E0C4822 /* Persistence */,
@@ -266,6 +290,7 @@
 			isa = PBXGroup;
 			children = (
 				14B29B5472F14E0D0053FE88 /* Dina */,
+				705DA42F2C7C48D1C29EC0D5 /* DinaUITests */,
 				F95FCF628BD2418EBA84533D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -397,6 +422,7 @@
 			isa = PBXGroup;
 			children = (
 				211C44676CFF588B4566ED85 /* Dina.app */,
+				50001FDBF157CCD915D65500 /* DinaUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -422,6 +448,24 @@
 			productReference = 211C44676CFF588B4566ED85 /* Dina.app */;
 			productType = "com.apple.product-type.application";
 		};
+		C1C1FED87589A9E59FD5F883 /* DinaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D039D745155420AB9EBC14FE /* Build configuration list for PBXNativeTarget "DinaUITests" */;
+			buildPhases = (
+				E586C2B7A0547BBE52310F40 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				43DAF1F0C8D32A1368995474 /* PBXTargetDependency */,
+			);
+			name = DinaUITests;
+			packageProductDependencies = (
+			);
+			productName = DinaUITests;
+			productReference = 50001FDBF157CCD915D65500 /* DinaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -434,6 +478,9 @@
 					A3F357754C0C8A47110623A9 = {
 						DevelopmentTeam = "";
 						ProvisioningStyle = Automatic;
+					};
+					C1C1FED87589A9E59FD5F883 = {
+						TestTargetID = A3F357754C0C8A47110623A9;
 					};
 				};
 			};
@@ -452,6 +499,7 @@
 			projectRoot = "";
 			targets = (
 				A3F357754C0C8A47110623A9 /* Dina */,
+				C1C1FED87589A9E59FD5F883 /* DinaUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -525,12 +573,29 @@
 				FEFCD6E6A1AF42B3D3FD6342 /* Trip.swift in Sources */,
 				50276E82F34F0130D5D5CAFC /* TripDetailView.swift in Sources */,
 				4D228DE8E9C3E0C130211E8B /* TripPurpose.swift in Sources */,
+				9D20DB77F0EC3D6AA02CC8D9 /* UITestSupport.swift in Sources */,
 				0A06BCF2A8A03B1C8219802A /* YearlyStatsView.swift in Sources */,
 				87A179027B8B26B4D15A2D65 /* YearlyStatsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E586C2B7A0547BBE52310F40 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F8A23A45C570C4EE9310783 /* DeleteDestinationUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		43DAF1F0C8D32A1368995474 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A3F357754C0C8A47110623A9 /* Dina */;
+			targetProxy = 3AED58CC64E30B81533E2CDC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		19517B0875ECBF937F802590 /* Release */ = {
@@ -593,6 +658,23 @@
 			};
 			name = Release;
 		};
+		1F89BDA57B2E0472F91E26BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexandre.dina.uitests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Dina;
+			};
+			name = Debug;
+		};
 		8C9E561C892CE894C232E3DC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -619,6 +701,23 @@
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
+		};
+		D2C3BA5BF32517A24B10E32F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexandre.dina.uitests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Dina;
+			};
+			name = Release;
 		};
 		D61E347EC21133B6DF7951D8 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -731,6 +830,15 @@
 			buildConfigurations = (
 				E56212DC8207871A30601A5E /* Debug */,
 				19517B0875ECBF937F802590 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D039D745155420AB9EBC14FE /* Build configuration list for PBXNativeTarget "DinaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F89BDA57B2E0472F91E26BF /* Debug */,
+				D2C3BA5BF32517A24B10E32F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;

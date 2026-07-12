@@ -49,6 +49,9 @@ targets:
         TARGETED_DEVICE_FAMILY: "1"
         SUPPORTS_MACCATALYST: NO
         ENABLE_PREVIEWS: YES
+    scheme:
+      testTargets:
+        - DinaUITests
     entitlements:
       path: Dina/Resources/Dina.entitlements
       properties:
@@ -58,3 +61,16 @@ targets:
           - CloudKit
         com.apple.developer.ubiquity-kvstore-identifier: "$(TeamIdentifierPrefix)com.alexandre.dina"
         aps-environment: development
+
+  DinaUITests:
+    type: bundle.ui-testing
+    platform: iOS
+    sources:
+      - path: DinaUITests
+    dependencies:
+      - target: Dina
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.alexandre.dina.uitests
+        TEST_TARGET_NAME: Dina
+        GENERATE_INFOPLIST_FILE: YES

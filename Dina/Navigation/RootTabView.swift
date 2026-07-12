@@ -24,6 +24,9 @@ struct RootTabView: View {
             }
             .task {
                 familyManager.bootstrap(with: modelContext)
+                #if DEBUG
+                UITestSupport.seedIfRequested(context: modelContext, familyManager: familyManager)
+                #endif
             }
             .onReceive(NotificationCenter.default.publisher(for: .sharingAccepted)) { _ in
                 familyManager.adoptSharedFamily(context: modelContext)
