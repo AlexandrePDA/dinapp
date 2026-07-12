@@ -59,10 +59,10 @@ struct HomeView: View {
         .sheet(item: $selectedMemory) { destination in
             DestinationDetailView(destination: destination)
         }
-        .task(id: scopedDestinations.count) {
+        .task(id: notificationsRefreshKey) {
             await MemoryNotificationService.refresh(
                 destinations: scopedDestinations,
-                babyName: scopedBabies.first?.name
+                baby: scopedBabies.first
             )
         }
     }
@@ -294,6 +294,12 @@ struct HomeView: View {
             }
             .padding(.horizontal, 20)
         }
+    }
+
+    /// Replanifie les notifications quand une sortie est ajoutée/supprimée
+    /// ou que la date de naissance change (profil créé ou modifié).
+    private var notificationsRefreshKey: String {
+        "\(scopedDestinations.count)-\(scopedBabies.first?.birthDate.timeIntervalSince1970 ?? 0)"
     }
 
     private var babyName: String {
