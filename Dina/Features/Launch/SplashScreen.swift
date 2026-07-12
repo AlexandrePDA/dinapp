@@ -42,23 +42,38 @@ struct SplashScreen: View {
         }
     }
 
+    /// Même recette que la carte héro de l'accueil, à l'échelle de
+    /// l'écran : lavis dégradé pêche → beurre → ciel et blobs très
+    /// floutés qui se fondent les uns dans les autres.
     private var decorativeBackground: some View {
         ZStack {
+            LinearGradient(
+                colors: [
+                    AppColors.peach.opacity(0.55),
+                    AppColors.butter.opacity(0.45),
+                    AppColors.sky.opacity(0.35)
+                ],
+                startPoint: .topLeading,
+                endPoint: .bottomTrailing
+            )
+
             BlobShape(seed: 0.9)
-                .fill(AppColors.peach.opacity(0.30))
-                .frame(width: 320, height: 320)
-                .offset(x: -140, y: -320)
-                .blur(radius: 4)
+                .fill(AppColors.butter.opacity(0.55))
+                .frame(width: 430, height: 430)
+                .offset(x: 150, y: -280)
+                .blur(radius: 42)
+
             BlobShape(seed: 0.7)
-                .fill(AppColors.sky.opacity(0.28))
-                .frame(width: 280, height: 280)
-                .offset(x: 160, y: -240)
-                .blur(radius: 4)
+                .fill(AppColors.sky.opacity(0.45))
+                .frame(width: 390, height: 390)
+                .offset(x: -170, y: 260)
+                .blur(radius: 46)
+
             BlobShape(seed: 0.8)
-                .fill(AppColors.butter.opacity(0.28))
-                .frame(width: 240, height: 240)
-                .offset(x: 120, y: 320)
-                .blur(radius: 4)
+                .fill(AppColors.peach.opacity(0.45))
+                .frame(width: 340, height: 340)
+                .offset(x: 130, y: 420)
+                .blur(radius: 50)
         }
         .ignoresSafeArea()
     }
